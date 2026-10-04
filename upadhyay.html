@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aasish Upadhyay</title>
+
+    <style>
+        button {
+            font-size: 4rem;
+        }
+        
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <button>
+            PRESS ME
+        </button>
+
+        <p>Sound Effect by <a
+            href="https://pixabay.com/users/dragon-studio-38165424/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=335478">DRAGON-STUDIO</a>
+        from <a
+            href="https://pixabay.com/sound-effects//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=335478">Pixabay</a></p>
+
+        <p>Made by Divas Pant to mimic Aasish</p>
+    </main>
+
+    <script>
+        const btn = document.querySelector("button");
+        const sound = new Audio("./fart.mp3");
+
+        btn.addEventListener("click", function(){
+            sound.volume = 1
+            sound.play()
+        });
+    </script>
+</body>
+</html>
